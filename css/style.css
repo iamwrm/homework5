@@ -88,6 +88,7 @@ Keyframes for animation*/
   min-height: 500px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -136,6 +137,7 @@ Keyframes for animation*/
 .card_big {
   -webkit-transform: initial;
   transform: initial;
+  flex-basis: 400px;
 }
 
 /* Gallery! */
@@ -188,20 +190,31 @@ header {
 
 @media screen and (min-width: 850px) {
   /* Cards! */
-  .card {}
+  .card {
+    flex-basis: 225px;
+  }
   .card_big {
     -webkit-transform: scaleX(1.12);
     transform: scaleX(1.12);
   }
   /* Navbar */
   header {
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .nav_links {
     flex-direction: row;
   }
   .nav_item a {
     padding: 10px;
+  }
+  .pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 
