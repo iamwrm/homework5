@@ -55,11 +55,32 @@ footer {
 /*
 Keyframes for animation*/
 
-@-webkit-keyframes logo_wiggle {}
+@-webkit-keyframes logo_wiggle {
+  from {
+    width: 20px;
+  }
+  to {
+    width: 419px;
+  }
+}
 
-@keyframes logo_wiggle {}
+@keyframes logo_wiggle {
+  from {
+    width: 20px;
+  }
+  to {
+    width: 419px;
+  }
+}
 
-#logo {}
+#logo {
+  -webkit-animation-name: logo_wiggle;
+  animation-name: logo_wiggle;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
 
 /* Cards! */
 
@@ -167,7 +188,9 @@ header {
   header {
     flex-direction: row;
   }
-  .nav_links {}
+  .nav_links {
+    flex-direction: row;
+  }
   .nav_item a {
     padding: 10px;
   }
