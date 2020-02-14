@@ -89,6 +89,7 @@ Keyframes for animation*/
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -96,6 +97,7 @@ Keyframes for animation*/
   background: #fff;
   border-radius: 7px;
   padding: 0 0 50px 0;
+  
   align-self: center;
   width: 400px;
   flex-basis: 400px;
@@ -220,6 +222,10 @@ header {
 @media print {
   .card {
     flex-basis: 200px;
+    align-self:flex-start;
+  }
+  .card_big{
+    align-self:flex-start;
   }
   .gallery {
     display: none;
@@ -229,8 +235,9 @@ header {
   }
   .pricing {
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
+    justify-content: center;
+
+
+
   }
 }
