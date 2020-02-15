@@ -87,9 +87,11 @@ Keyframes for animation*/
 .pricing {
   min-height: 500px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-basis: 400px;
 }
 
 .card {
@@ -98,7 +100,6 @@ Keyframes for animation*/
   border-radius: 7px;
   padding: 0 0 50px 0;
   align-self: center;
-  width: 400px;
   flex-basis: 400px;
 }
 
